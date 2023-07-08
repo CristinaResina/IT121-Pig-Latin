@@ -1,6 +1,6 @@
 let vowels = "aelouAEIOU";
 
-function translateToPigLatin(){
+function encoderToPigLatin(){
   // Declare local variables
   let input = inputText.value; // Stores the value of the input text 
   let pigLatin =''; //Placeholder for the pig Latin output
@@ -20,7 +20,7 @@ function translateToPigLatin(){
   }
 
   // Update the text in the pigoutput span
-  translationResult.innerHTML = pigLatin;
+  encoderResult.innerHTML = pigLatin;
     
 };
   

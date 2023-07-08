@@ -2,18 +2,18 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Pig Latin Translator</title>
+  <title>Pig Latin Encoder </title>
 </head>
 <body>
-  <h1>Pig Latin Translator</h1>
+  <h1>Pig Latin Encoder</h1>
 
-  <form onsubmit="event.preventDefault(); translateToPigLatin();">
-    <label for="inputText">Enter text to translate:</label>
+  <form onsubmit="event.preventDefault(); encoderToPigLatin();">
+    <label for="inputText">Enter text to encoder:</label>
     <input type="text" id="inputText" required>
-    <button type="submit">Translate</button>
+    <button type="submit">Encoder</button>
   </form>
 
-  <div id="translationResult"></div>
+  <div id="encoderResult"></div>
   
   <script src="script.js"></script>
 </body>
