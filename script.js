@@ -5,9 +5,9 @@ function translateToPigLatin(){
   let input = inputText.value; // Stores the value of the input text 
   let pigLatin =''; //Placeholder for the pig Latin output
 
-  if (input.length <= 1) {
+  if (input.length <= 2) {
     // The string contains only one letter or less (invalid)
-    pigLatin = "Invalid input. A word must have more than one letter.";
+    pigLatin = "Invalid input. A word must have less than one letter.";
   }else if (!vowels.includes(input.charAt(0)) && !vowels.includes(input.charAt(1))){
     // The first two letters are consonants (not vowels)
     pigLatin = input.slice(2) + input.slice(0, 2) + 'ay';
